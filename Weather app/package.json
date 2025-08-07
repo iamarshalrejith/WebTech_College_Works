@@ -1,17 +1,18 @@
 {
-  "dependencies": {
-    "dotenv": "^17.2.1"
-  },
   "name": "weather-app",
   "version": "1.0.0",
   "description": "A weather application that allows users to check the current weather for any city around the world. It fetches real-time data from the OpenWeatherMap API and displays temperature, humidity, and wind speed, ensuring users get accurate weather updates.",
-  "main": "script.js",
-  "type":"module",
-  "devDependencies": {},
+  "main": "server/server.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/server.js",
+    "build": "echo 'No build step required'"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.1"
+  },
+  "devDependencies": {}
 }
